@@ -1,0 +1,266 @@
+export interface Pokemon {
+  id: number
+  name: string
+  germanName: string
+  types: string[]
+  germanTypes: string[]
+  generation: number
+  imageUrl: string
+}
+
+export const POKEMON_DATA: Pokemon[] = [
+  // Generation 1
+  { id: 1, name: "Bulbasaur", germanName: "Bisasam", types: ["Grass", "Poison"], germanTypes: ["Pflanze", "Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" },
+  { id: 2, name: "Ivysaur", germanName: "Bisaknosp", types: ["Grass", "Poison"], germanTypes: ["Pflanze", "Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" },
+  { id: 3, name: "Venusaur", germanName: "Bisaflor", types: ["Grass", "Poison"], germanTypes: ["Pflanze", "Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" },
+  { id: 4, name: "Charmander", germanName: "Glumanda", types: ["Fire"], germanTypes: ["Feuer"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" },
+  { id: 5, name: "Charmeleon", germanName: "Glutexo", types: ["Fire"], germanTypes: ["Feuer"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png" },
+  { id: 6, name: "Charizard", germanName: "Glurak", types: ["Fire", "Flying"], germanTypes: ["Feuer", "Flug"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" },
+  { id: 7, name: "Squirtle", germanName: "Schiggy", types: ["Water"], germanTypes: ["Wasser"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" },
+  { id: 8, name: "Wartortle", germanName: "Schillok", types: ["Water"], germanTypes: ["Wasser"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png" },
+  { id: 9, name: "Blastoise", germanName: "Turtok", types: ["Water"], germanTypes: ["Wasser"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" },
+  { id: 10, name: "Caterpie", germanName: "Raupy", types: ["Bug"], germanTypes: ["Käfer"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png" },
+  { id: 11, name: "Metapod", germanName: "Safcon", types: ["Bug"], germanTypes: ["Käfer"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png" },
+  { id: 12, name: "Butterfree", germanName: "Smettbo", types: ["Bug", "Flying"], germanTypes: ["Käfer", "Flug"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png" },
+  { id: 13, name: "Weedle", germanName: "Hornliu", types: ["Bug", "Poison"], germanTypes: ["Käfer", "Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png" },
+  { id: 14, name: "Kakuna", germanName: "Kokuna", types: ["Bug", "Poison"], germanTypes: ["Käfer", "Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png" },
+  { id: 15, name: "Beedrill", germanName: "Bibor", types: ["Bug", "Poison"], germanTypes: ["Käfer", "Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png" },
+  { id: 16, name: "Pidgey", germanName: "Taubsi", types: ["Normal", "Flying"], germanTypes: ["Normal", "Flug"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png" },
+  { id: 17, name: "Pidgeotto", germanName: "Tauboga", types: ["Normal", "Flying"], germanTypes: ["Normal", "Flug"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png" },
+  { id: 18, name: "Pidgeot", germanName: "Tauboss", types: ["Normal", "Flying"], germanTypes: ["Normal", "Flug"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png" },
+  { id: 19, name: "Rattata", germanName: "Rattfratz", types: ["Normal"], germanTypes: ["Normal"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png" },
+  { id: 20, name: "Raticate", germanName: "Rattikarl", types: ["Normal"], germanTypes: ["Normal"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png" },
+  { id: 21, name: "Spearow", germanName: "Habitak", types: ["Normal", "Flying"], germanTypes: ["Normal", "Flug"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png" },
+  { id: 22, name: "Fearow", germanName: "Ibitak", types: ["Normal", "Flying"], germanTypes: ["Normal", "Flug"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png" },
+  { id: 23, name: "Ekans", germanName: "Rettan", types: ["Poison"], germanTypes: ["Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png" },
+  { id: 24, name: "Arbok", germanName: "Arbok", types: ["Poison"], germanTypes: ["Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png" },
+  { id: 25, name: "Pikachu", germanName: "Pikachu", types: ["Electric"], germanTypes: ["Elektro"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" },
+  { id: 26, name: "Raichu", germanName: "Raichu", types: ["Electric"], germanTypes: ["Elektro"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png" },
+  { id: 27, name: "Sandshrew", germanName: "Sandan", types: ["Ground"], germanTypes: ["Boden"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png" },
+  { id: 28, name: "Sandslash", germanName: "Sandamer", types: ["Ground"], germanTypes: ["Boden"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png" },
+  { id: 29, name: "Nidoran♀", germanName: "Nidoran♀", types: ["Poison"], germanTypes: ["Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png" },
+  { id: 30, name: "Nidorina", germanName: "Nidorina", types: ["Poison"], germanTypes: ["Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png" },
+  { id: 31, name: "Nidoqueen", germanName: "Nidoqueen", types: ["Poison", "Ground"], germanTypes: ["Gift", "Boden"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png" },
+  { id: 32, name: "Nidoran♂", germanName: "Nidoran♂", types: ["Poison"], germanTypes: ["Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png" },
+  { id: 33, name: "Nidorino", germanName: "Nidorino", types: ["Poison"], germanTypes: ["Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png" },
+  { id: 34, name: "Nidoking", germanName: "Nidoking", types: ["Poison", "Ground"], germanTypes: ["Gift", "Boden"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png" },
+  { id: 35, name: "Clefairy", germanName: "Piepi", types: ["Fairy"], germanTypes: ["Fee"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png" },
+  { id: 36, name: "Clefable", germanName: "Pixi", types: ["Fairy"], germanTypes: ["Fee"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png" },
+  { id: 37, name: "Vulpix", germanName: "Vulpix", types: ["Fire"], germanTypes: ["Feuer"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png" },
+  { id: 38, name: "Ninetales", germanName: "Vulnona", types: ["Fire"], germanTypes: ["Feuer"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png" },
+  { id: 39, name: "Jigglypuff", germanName: "Pummeluff", types: ["Normal", "Fairy"], germanTypes: ["Normal", "Fee"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png" },
+  { id: 40, name: "Wigglytuff", germanName: "Knuddeluff", types: ["Normal", "Fairy"], germanTypes: ["Normal", "Fee"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png" },
+  { id: 41, name: "Zubat", germanName: "Zubat", types: ["Poison", "Flying"], germanTypes: ["Gift", "Flug"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png" },
+  { id: 42, name: "Golbat", germanName: "Golbat", types: ["Poison", "Flying"], germanTypes: ["Gift", "Flug"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png" },
+  { id: 43, name: "Oddish", germanName: "Myrapla", types: ["Grass", "Poison"], germanTypes: ["Pflanze", "Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png" },
+  { id: 44, name: "Gloom", germanName: "Duflor", types: ["Grass", "Poison"], germanTypes: ["Pflanze", "Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png" },
+  { id: 45, name: "Vileplume", germanName: "Giflor", types: ["Grass", "Poison"], germanTypes: ["Pflanze", "Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png" },
+  { id: 46, name: "Paras", germanName: "Paras", types: ["Bug", "Grass"], germanTypes: ["Käfer", "Pflanze"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png" },
+  { id: 47, name: "Parasect", germanName: "Parasek", types: ["Bug", "Grass"], germanTypes: ["Käfer", "Pflanze"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png" },
+  { id: 48, name: "Venonat", germanName: "Bluzuk", types: ["Bug", "Poison"], germanTypes: ["Käfer", "Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png" },
+  { id: 49, name: "Venomoth", germanName: "Omot", types: ["Bug", "Poison"], germanTypes: ["Käfer", "Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png" },
+  { id: 50, name: "Diglett", germanName: "Digda", types: ["Ground"], germanTypes: ["Boden"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png" },
+  { id: 51, name: "Dugtrio", germanName: "Digdri", types: ["Ground"], germanTypes: ["Boden"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png" },
+  { id: 52, name: "Meowth", germanName: "Mauzi", types: ["Normal"], germanTypes: ["Normal"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png" },
+  { id: 53, name: "Persian", germanName: "Snobilikat", types: ["Normal"], germanTypes: ["Normal"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png" },
+  { id: 54, name: "Psyduck", germanName: "Enton", types: ["Water"], germanTypes: ["Wasser"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png" },
+  { id: 55, name: "Golduck", germanName: "Entoron", types: ["Water"], germanTypes: ["Wasser"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png" },
+  { id: 56, name: "Mankey", germanName: "Menki", types: ["Fighting"], germanTypes: ["Kampf"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png" },
+  { id: 57, name: "Primeape", germanName: "Rasaff", types: ["Fighting"], germanTypes: ["Kampf"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png" },
+  { id: 58, name: "Growlithe", germanName: "Fukano", types: ["Fire"], germanTypes: ["Feuer"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png" },
+  { id: 59, name: "Arcanine", germanName: "Arkani", types: ["Fire"], germanTypes: ["Feuer"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png" },
+  { id: 60, name: "Poliwag", germanName: "Quapsel", types: ["Water"], germanTypes: ["Wasser"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png" },
+  { id: 61, name: "Poliwhirl", germanName: "Quaputzi", types: ["Water"], germanTypes: ["Wasser"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png" },
+  { id: 62, name: "Poliwrath", germanName: "Quappo", types: ["Water", "Fighting"], germanTypes: ["Wasser", "Kampf"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png" },
+  { id: 63, name: "Abra", germanName: "Abra", types: ["Psychic"], germanTypes: ["Psycho"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png" },
+  { id: 64, name: "Kadabra", germanName: "Kadabra", types: ["Psychic"], germanTypes: ["Psycho"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png" },
+  { id: 65, name: "Alakazam", germanName: "Simsala", types: ["Psychic"], germanTypes: ["Psycho"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png" },
+  { id: 66, name: "Machop", germanName: "Machollo", types: ["Fighting"], germanTypes: ["Kampf"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png" },
+  { id: 67, name: "Machoke", germanName: "Maschock", types: ["Fighting"], germanTypes: ["Kampf"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png" },
+  { id: 68, name: "Machamp", germanName: "Machomei", types: ["Fighting"], germanTypes: ["Kampf"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png" },
+  { id: 69, name: "Bellsprout", germanName: "Knofensa", types: ["Grass", "Poison"], germanTypes: ["Pflanze", "Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png" },
+  { id: 70, name: "Weepinbell", germanName: "Ultrigaria", types: ["Grass", "Poison"], germanTypes: ["Pflanze", "Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png" },
+  { id: 71, name: "Victreebel", germanName: "Sarzenia", types: ["Grass", "Poison"], germanTypes: ["Pflanze", "Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png" },
+  { id: 72, name: "Tentacool", germanName: "Tentacha", types: ["Water", "Poison"], germanTypes: ["Wasser", "Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png" },
+  { id: 73, name: "Tentacruel", germanName: "Tentoxa", types: ["Water", "Poison"], germanTypes: ["Wasser", "Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png" },
+  { id: 74, name: "Geodude", germanName: "Kleinstein", types: ["Rock", "Ground"], germanTypes: ["Gestein", "Boden"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png" },
+  { id: 75, name: "Graveler", germanName: "Georok", types: ["Rock", "Ground"], germanTypes: ["Gestein", "Boden"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png" },
+  { id: 76, name: "Golem", germanName: "Geowaz", types: ["Rock", "Ground"], germanTypes: ["Gestein", "Boden"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png" },
+  { id: 77, name: "Ponyta", germanName: "Ponita", types: ["Fire"], germanTypes: ["Feuer"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png" },
+  { id: 78, name: "Rapidash", germanName: "Gallopa", types: ["Fire"], germanTypes: ["Feuer"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png" },
+  { id: 79, name: "Slowpoke", germanName: "Flegmon", types: ["Water", "Psychic"], germanTypes: ["Wasser", "Psycho"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png" },
+  { id: 80, name: "Slowbro", germanName: "Lahmus", types: ["Water", "Psychic"], germanTypes: ["Wasser", "Psycho"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png" },
+  { id: 81, name: "Magnemite", germanName: "Magnetilo", types: ["Electric", "Steel"], germanTypes: ["Elektro", "Stahl"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png" },
+  { id: 82, name: "Magneton", germanName: "Magneton", types: ["Electric", "Steel"], germanTypes: ["Elektro", "Stahl"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png" },
+  { id: 83, name: "Farfetch'd", germanName: "Porenta", types: ["Normal", "Flying"], germanTypes: ["Normal", "Flug"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png" },
+  { id: 84, name: "Doduo", germanName: "Dodu", types: ["Normal", "Flying"], germanTypes: ["Normal", "Flug"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png" },
+  { id: 85, name: "Dodrio", germanName: "Dodri", types: ["Normal", "Flying"], germanTypes: ["Normal", "Flug"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png" },
+  { id: 86, name: "Seel", germanName: "Jurob", types: ["Water"], germanTypes: ["Wasser"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png" },
+  { id: 87, name: "Dewgong", germanName: "Jugong", types: ["Water", "Ice"], germanTypes: ["Wasser", "Eis"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png" },
+  { id: 88, name: "Grimer", germanName: "Sleima", types: ["Poison"], germanTypes: ["Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png" },
+  { id: 89, name: "Muk", germanName: "Sleimok", types: ["Poison"], germanTypes: ["Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png" },
+  { id: 90, name: "Shellder", germanName: "Muschas", types: ["Water"], germanTypes: ["Wasser"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png" },
+  { id: 91, name: "Cloyster", germanName: "Austos", types: ["Water", "Ice"], germanTypes: ["Wasser", "Eis"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png" },
+  { id: 92, name: "Gastly", germanName: "Nebulak", types: ["Ghost", "Poison"], germanTypes: ["Geist", "Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png" },
+  { id: 93, name: "Haunter", germanName: "Alpollo", types: ["Ghost", "Poison"], germanTypes: ["Geist", "Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png" },
+  { id: 94, name: "Gengar", germanName: "Gengar", types: ["Ghost", "Poison"], germanTypes: ["Geist", "Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png" },
+  { id: 95, name: "Onix", germanName: "Onix", types: ["Rock", "Ground"], germanTypes: ["Gestein", "Boden"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png" },
+  { id: 96, name: "Drowzee", germanName: "Traumato", types: ["Psychic"], germanTypes: ["Psycho"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png" },
+  { id: 97, name: "Hypno", germanName: "Hypno", types: ["Psychic"], germanTypes: ["Psycho"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png" },
+  { id: 98, name: "Krabby", germanName: "Krabby", types: ["Water"], germanTypes: ["Wasser"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png" },
+  { id: 99, name: "Kingler", germanName: "Kingler", types: ["Water"], germanTypes: ["Wasser"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png" },
+  { id: 100, name: "Voltorb", germanName: "Voltobal", types: ["Electric"], germanTypes: ["Elektro"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png" },
+  { id: 101, name: "Electrode", germanName: "Lektrobal", types: ["Electric"], germanTypes: ["Elektro"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png" },
+  { id: 102, name: "Exeggcute", germanName: "Owei", types: ["Grass", "Psychic"], germanTypes: ["Pflanze", "Psycho"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png" },
+  { id: 103, name: "Exeggutor", germanName: "Kokowei", types: ["Grass", "Psychic"], germanTypes: ["Pflanze", "Psycho"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png" },
+  { id: 104, name: "Cubone", germanName: "Tragosso", types: ["Ground"], germanTypes: ["Boden"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png" },
+  { id: 105, name: "Marowak", germanName: "Knogga", types: ["Ground"], germanTypes: ["Boden"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png" },
+  { id: 106, name: "Hitmonlee", germanName: "Kicklee", types: ["Fighting"], germanTypes: ["Kampf"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png" },
+  { id: 107, name: "Hitmonchan", germanName: "Nockchan", types: ["Fighting"], germanTypes: ["Kampf"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png" },
+  { id: 108, name: "Lickitung", germanName: "Schlurp", types: ["Normal"], germanTypes: ["Normal"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png" },
+  { id: 109, name: "Koffing", germanName: "Smogon", types: ["Poison"], germanTypes: ["Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png" },
+  { id: 110, name: "Weezing", germanName: "Smogmog", types: ["Poison"], germanTypes: ["Gift"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png" },
+  { id: 111, name: "Rhyhorn", germanName: "Rihorn", types: ["Ground", "Rock"], germanTypes: ["Boden", "Gestein"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png" },
+  { id: 112, name: "Rhydon", germanName: "Rizeros", types: ["Ground", "Rock"], germanTypes: ["Boden", "Gestein"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png" },
+  { id: 113, name: "Chansey", germanName: "Chaneira", types: ["Normal"], germanTypes: ["Normal"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png" },
+  { id: 114, name: "Tangela", germanName: "Tangela", types: ["Grass"], germanTypes: ["Pflanze"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png" },
+  { id: 115, name: "Kangaskhan", germanName: "Kangama", types: ["Normal"], germanTypes: ["Normal"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png" },
+  { id: 116, name: "Horsea", germanName: "Seeper", types: ["Water"], germanTypes: ["Wasser"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png" },
+  { id: 117, name: "Seadra", germanName: "Seemon", types: ["Water"], germanTypes: ["Wasser"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png" },
+  { id: 118, name: "Goldeen", germanName: "Goldini", types: ["Water"], germanTypes: ["Wasser"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png" },
+  { id: 119, name: "Seaking", germanName: "Golking", types: ["Water"], germanTypes: ["Wasser"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png" },
+  { id: 120, name: "Staryu", germanName: "Sterndu", types: ["Water"], germanTypes: ["Wasser"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png" },
+  { id: 121, name: "Starmie", germanName: "Starmie", types: ["Water", "Psychic"], germanTypes: ["Wasser", "Psycho"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png" },
+  { id: 122, name: "Mr. Mime", germanName: "Pantimos", types: ["Psychic", "Fairy"], germanTypes: ["Psycho", "Fee"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png" },
+  { id: 123, name: "Scyther", germanName: "Sichlor", types: ["Bug", "Flying"], germanTypes: ["Käfer", "Flug"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png" },
+  { id: 124, name: "Jynx", germanName: "Rossana", types: ["Ice", "Psychic"], germanTypes: ["Eis", "Psycho"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png" },
+  { id: 125, name: "Electabuzz", germanName: "Elektek", types: ["Electric"], germanTypes: ["Elektro"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png" },
+  { id: 126, name: "Magmar", germanName: "Magmar", types: ["Fire"], germanTypes: ["Feuer"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png" },
+  { id: 127, name: "Pinsir", germanName: "Pinsir", types: ["Bug"], germanTypes: ["Käfer"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png" },
+  { id: 128, name: "Tauros", germanName: "Tauros", types: ["Normal"], germanTypes: ["Normal"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png" },
+  { id: 129, name: "Magikarp", germanName: "Karpador", types: ["Water"], germanTypes: ["Wasser"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png" },
+  { id: 130, name: "Gyarados", germanName: "Garados", types: ["Water", "Flying"], germanTypes: ["Wasser", "Flug"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png" },
+  { id: 131, name: "Lapras", germanName: "Lapras", types: ["Water", "Ice"], germanTypes: ["Wasser", "Eis"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png" },
+  { id: 132, name: "Ditto", germanName: "Ditto", types: ["Normal"], germanTypes: ["Normal"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" },
+  { id: 133, name: "Eevee", germanName: "Evoli", types: ["Normal"], germanTypes: ["Normal"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png" },
+  { id: 134, name: "Vaporeon", germanName: "Aquana", types: ["Water"], germanTypes: ["Wasser"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png" },
+  { id: 135, name: "Jolteon", germanName: "Blitza", types: ["Electric"], germanTypes: ["Elektro"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png" },
+  { id: 136, name: "Flareon", germanName: "Flamara", types: ["Fire"], germanTypes: ["Feuer"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png" },
+  { id: 137, name: "Porygon", germanName: "Porygon", types: ["Normal"], germanTypes: ["Normal"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png" },
+  { id: 138, name: "Omanyte", germanName: "Amonitas", types: ["Rock", "Water"], germanTypes: ["Gestein", "Wasser"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png" },
+  { id: 139, name: "Omastar", germanName: "Amoroso", types: ["Rock", "Water"], germanTypes: ["Gestein", "Wasser"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png" },
+  { id: 140, name: "Kabuto", germanName: "Kabuto", types: ["Rock", "Water"], germanTypes: ["Gestein", "Wasser"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png" },
+  { id: 141, name: "Kabutops", germanName: "Kabutops", types: ["Rock", "Water"], germanTypes: ["Gestein", "Wasser"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png" },
+  { id: 142, name: "Aerodactyl", germanName: "Aerodactyl", types: ["Rock", "Flying"], germanTypes: ["Gestein", "Flug"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png" },
+  { id: 143, name: "Snorlax", germanName: "Relaxo", types: ["Normal"], germanTypes: ["Normal"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png" },
+  { id: 144, name: "Articuno", germanName: "Arktos", types: ["Ice", "Flying"], germanTypes: ["Eis", "Flug"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png" },
+  { id: 145, name: "Zapdos", germanName: "Zapdos", types: ["Electric", "Flying"], germanTypes: ["Elektro", "Flug"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png" },
+  { id: 146, name: "Moltres", germanName: "Lavados", types: ["Fire", "Flying"], germanTypes: ["Feuer", "Flug"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png" },
+  { id: 147, name: "Dratini", germanName: "Dratini", types: ["Dragon"], germanTypes: ["Drache"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png" },
+  { id: 148, name: "Dragonair", germanName: "Dragonir", types: ["Dragon"], germanTypes: ["Drache"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png" },
+  { id: 149, name: "Dragonite", germanName: "Dragoran", types: ["Dragon", "Flying"], germanTypes: ["Drache", "Flug"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png" },
+  { id: 150, name: "Mewtwo", germanName: "Mewtu", types: ["Psychic"], germanTypes: ["Psycho"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png" },
+  { id: 151, name: "Mew", germanName: "Mew", types: ["Psychic"], germanTypes: ["Psycho"], generation: 1, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png" },
+
+  // Generation 2 (adding key ones for now - can expand later)
+  { id: 152, name: "Chikorita", germanName: "Endivie", types: ["Grass"], germanTypes: ["Pflanze"], generation: 2, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/152.png" },
+  { id: 153, name: "Bayleef", germanName: "Lorblatt", types: ["Grass"], germanTypes: ["Pflanze"], generation: 2, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/153.png" },
+  { id: 154, name: "Meganium", germanName: "Meganie", types: ["Grass"], germanTypes: ["Pflanze"], generation: 2, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/154.png" },
+  { id: 155, name: "Cyndaquil", germanName: "Feurigel", types: ["Fire"], germanTypes: ["Feuer"], generation: 2, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/155.png" },
+  { id: 156, name: "Quilava", germanName: "Igelavar", types: ["Fire"], germanTypes: ["Feuer"], generation: 2, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/156.png" },
+  { id: 157, name: "Typhlosion", germanName: "Tornupto", types: ["Fire"], germanTypes: ["Feuer"], generation: 2, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/157.png" },
+  { id: 158, name: "Totodile", germanName: "Karnimani", types: ["Water"], germanTypes: ["Wasser"], generation: 2, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/158.png" },
+  { id: 159, name: "Croconaw", germanName: "Tyracroc", types: ["Water"], germanTypes: ["Wasser"], generation: 2, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/159.png" },
+  { id: 160, name: "Feraligatr", germanName: "Impergator", types: ["Water"], germanTypes: ["Wasser"], generation: 2, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/160.png" },
+  { id: 169, name: "Crobat", germanName: "Iksbat", types: ["Poison", "Flying"], germanTypes: ["Gift", "Flug"], generation: 2, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png" },
+  { id: 181, name: "Ampharos", germanName: "Ampharos", types: ["Electric"], germanTypes: ["Elektro"], generation: 2, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/181.png" },
+  { id: 196, name: "Espeon", germanName: "Psiana", types: ["Psychic"], germanTypes: ["Psycho"], generation: 2, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png" },
+  { id: 197, name: "Umbreon", germanName: "Nachtara", types: ["Dark"], germanTypes: ["Unlicht"], generation: 2, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png" },
+
+  // Generation 3 (Hoenn starters and key Pokemon)
+  { id: 252, name: "Treecko", germanName: "Geckarbor", types: ["Grass"], germanTypes: ["Pflanze"], generation: 3, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/252.png" },
+  { id: 253, name: "Grovyle", germanName: "Reptain", types: ["Grass"], germanTypes: ["Pflanze"], generation: 3, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/253.png" },
+  { id: 254, name: "Sceptile", germanName: "Gewaldro", types: ["Grass"], germanTypes: ["Pflanze"], generation: 3, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/254.png" },
+  { id: 255, name: "Torchic", germanName: "Flemmli", types: ["Fire"], germanTypes: ["Feuer"], generation: 3, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/255.png" },
+  { id: 256, name: "Combusken", germanName: "Jungglut", types: ["Fire", "Fighting"], germanTypes: ["Feuer", "Kampf"], generation: 3, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/256.png" },
+  { id: 257, name: "Blaziken", germanName: "Lohgock", types: ["Fire", "Fighting"], germanTypes: ["Feuer", "Kampf"], generation: 3, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/257.png" },
+  { id: 258, name: "Mudkip", germanName: "Hydropi", types: ["Water"], germanTypes: ["Wasser"], generation: 3, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/258.png" },
+  { id: 259, name: "Marshtomp", germanName: "Moorabbel", types: ["Water", "Ground"], germanTypes: ["Wasser", "Boden"], generation: 3, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/259.png" },
+  { id: 260, name: "Swampert", germanName: "Sumpex", types: ["Water", "Ground"], germanTypes: ["Wasser", "Boden"], generation: 3, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/260.png" },
+  { id: 280, name: "Ralts", germanName: "Trasla", types: ["Psychic", "Fairy"], germanTypes: ["Psycho", "Fee"], generation: 3, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/280.png" },
+  { id: 281, name: "Kirlia", germanName: "Kirlia", types: ["Psychic", "Fairy"], germanTypes: ["Psycho", "Fee"], generation: 3, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/281.png" },
+  { id: 282, name: "Gardevoir", germanName: "Guardevoir", types: ["Psychic", "Fairy"], germanTypes: ["Psycho", "Fee"], generation: 3, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/282.png" },
+  { id: 309, name: "Electrike", germanName: "Frizelbliz", types: ["Electric"], germanTypes: ["Elektro"], generation: 3, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/309.png" },
+  { id: 310, name: "Manectric", germanName: "Voltenso", types: ["Electric"], germanTypes: ["Elektro"], generation: 3, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/310.png" },
+
+  // Adding more popular Pokemon from various generations
+  { id: 448, name: "Lucario", germanName: "Lucario", types: ["Fighting", "Steel"], germanTypes: ["Kampf", "Stahl"], generation: 4, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png" },
+  { id: 493, name: "Arceus", germanName: "Arceus", types: ["Normal"], germanTypes: ["Normal"], generation: 4, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493.png" },
+  { id: 700, name: "Sylveon", germanName: "Feelinara", types: ["Fairy"], germanTypes: ["Fee"], generation: 6, imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/700.png" }
+]
+
+export const getPokemonById = (id: number): Pokemon | undefined => {
+  return POKEMON_DATA.find(pokemon => pokemon.id === id)
+}
+
+export const getPokemonByName = (name: string): Pokemon | undefined => {
+  return POKEMON_DATA.find(pokemon => 
+    pokemon.name.toLowerCase() === name.toLowerCase() || 
+    pokemon.germanName.toLowerCase() === name.toLowerCase()
+  )
+}
+
+export const searchPokemon = (query: string): Pokemon[] => {
+  const lowerQuery = query.toLowerCase()
+  return POKEMON_DATA.filter(pokemon => 
+    pokemon.name.toLowerCase().includes(lowerQuery) ||
+    pokemon.germanName.toLowerCase().includes(lowerQuery)
+  )
+}
+
+export const getPokemonByGeneration = (generation: number): Pokemon[] => {
+  return POKEMON_DATA.filter(pokemon => pokemon.generation === generation)
+}
+
+export const getTypeColor = (type: string): string => {
+  const typeColors: { [key: string]: string } = {
+    // German types
+    'Normal': '#A8A878',
+    'Feuer': '#F08030',
+    'Wasser': '#6890F0',
+    'Elektro': '#F8D030',
+    'Pflanze': '#78C850',
+    'Eis': '#98D8D8',
+    'Kampf': '#C03028',
+    'Gift': '#A040A0',
+    'Boden': '#E0C068',
+    'Flug': '#A890F0',
+    'Psycho': '#F85888',
+    'Käfer': '#A8B820',
+    'Gestein': '#B8A038',
+    'Geist': '#705898',
+    'Drache': '#7038F8',
+    'Unlicht': '#705848',
+    'Stahl': '#B8B8D0',
+    'Fee': '#EE99AC',
+    // English types (fallback)
+    'Fire': '#F08030',
+    'Water': '#6890F0',
+    'Electric': '#F8D030',
+    'Grass': '#78C850',
+    'Ice': '#98D8D8',
+    'Fighting': '#C03028',
+    'Poison': '#A040A0',
+    'Ground': '#E0C068',
+    'Flying': '#A890F0',
+    'Psychic': '#F85888',
+    'Bug': '#A8B820',
+    'Rock': '#B8A038',
+    'Ghost': '#705898',
+    'Dragon': '#7038F8',
+    'Dark': '#705848',
+    'Steel': '#B8B8D0',
+    'Fairy': '#EE99AC'
+  }
+  return typeColors[type] || '#68A090'
+}
